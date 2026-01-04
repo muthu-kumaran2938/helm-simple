@@ -6,6 +6,9 @@ metadata:
   labels:
     app: {{ include "myapp.name" . }}
     chart-version: {{ .Chart.Version }}
+    app.kubernetes.io/version: "1.2.4"
+    app.kubernetes.io/managed-by: argocd
+
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
