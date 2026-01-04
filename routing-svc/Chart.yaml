@@ -3,4 +3,4 @@ name: myapp
 description: A simple Helm chart for my app
 type: application
 version: 1.1.2   # <-- important for UI visibility
-appVersion: "1.1.0"
+appVersion: "2.0"
