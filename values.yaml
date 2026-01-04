@@ -1,5 +1,6 @@
 replicaCount: 2
 namespace: default
+
 image:
   repository: nginx
   tag: "latest"
