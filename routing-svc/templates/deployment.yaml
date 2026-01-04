@@ -5,6 +5,7 @@ metadata:
   namespace: {{ .Values.namespace }}
   labels:
     app: {{ include "myapp.name" . }}
+    chart-version: {{ .Chart.Version }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
@@ -14,6 +15,7 @@ spec:
     metadata:
       labels:
         app: {{ include "myapp.name" . }}
+        chart-version: {{ .Chart.Version }}
     spec:
       containers:
         - name: {{ .Chart.Name }}
